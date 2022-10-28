@@ -2,7 +2,7 @@ import Main from "./pages/Main";
 
 function App() {
   return (
-    <div className="App">
+    <div className="bg-bg">
       <Main/>
     </div>
   );
