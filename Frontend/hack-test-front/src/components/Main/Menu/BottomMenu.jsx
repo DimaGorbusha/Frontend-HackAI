@@ -3,7 +3,7 @@ import "./Menu.css"
 
 export default function BottomMenu() {
   return (
-    <div className='ml-[110px] mt-[16px] flex'>
+    <div className='ml-[110px] mt-[16px] flex mb-[210px]'>
         <div className='pl-[20px] pr-[36px] py-[15px] bg-white rounded-[8px] ml-[10px]'>
             <input type="checkbox" className="custom-checkbox" id="ethics-checking" name="ethics-checking" value="yes"/>
             <label for="ethics-checking" className='ml-[10px] text-[16px] font-sussie-book text-[#332E2D]'>Проверка на этичность</label>
