@@ -1,9 +1,37 @@
-import React from 'react'
+import React, {useState} from 'react'
 import upload from "../img/pages/Main/upload.svg"
 
 export default function DropZone() {
+
+    const [drag, setDrag] = useState(false);
+    const [file, setFile] = useState({name:"", size:""});
+    const url = "";
+
     const borderStyle = {
         border: '2px dashed #696969',
+    }
+
+    function fileHandler(e){
+        e.preventDefault();
+        setFile(e.dataTransfer.files[0]);
+        const [file, setFile] = useState({name:"", size:""});
+        fetch(url, {
+          method: 'POST',
+          body: file
+        })
+        .then(() => {console.log('Загружено'); })
+        .catch(() => { console.log('Ошибка');})
+        setDrag(false)
+    }
+
+    function dragStartHandler(e){
+        e.preventDefault();
+        setDrag(true)
+    }
+  
+    function dragLeaveHandler(e){
+        e.preventDefault();
+        setDrag(false)
     }
   
     return (

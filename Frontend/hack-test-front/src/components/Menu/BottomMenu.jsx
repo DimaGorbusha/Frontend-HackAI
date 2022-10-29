@@ -13,6 +13,14 @@ export default function BottomMenu() {
             <input type="checkbox" class="custom-checkbox" id="censorship-checking" name="censorship-checking" value="yes"/>
             <label for="censorship-checking" className='ml-[10px] text-[16px] font-sussie-book text-[#332E2D]'>Проверка на цензурность</label>
         </div>
+        <div>
+          <button class="dropbtn">Dropdown</button>
+          <div class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
+        </div>
     </div>
   )
 }
