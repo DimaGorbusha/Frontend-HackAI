@@ -17,6 +17,11 @@
   src: local('Sussie Intl Book'), url(fonts/SuisseIntl-Book.otf);
 }
 
+@font-face {
+  font-family: 'Sussie Intl SemiBold';
+  src: local('Sussie Intl SemiBold'), url(fonts/SuisseIntl-SemiBold.otf);
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',

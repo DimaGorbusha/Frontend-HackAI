@@ -15,6 +15,7 @@ module.exports = {
         'sussie-regular': ['Sussie Intl Regular'],
         'sussie-medium': ['Sussie Intl Medium'],
         'sussie-book': ['Sussie Intl Book'],
+        'sussie-semibold': ['Sussie Intl SemiBold'],
       }
     },
   },
