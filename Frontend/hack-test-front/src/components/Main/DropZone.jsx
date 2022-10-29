@@ -1,11 +1,14 @@
 import React, {useState} from 'react'
 import upload from "../../img/pages/Main/upload.svg"
+import { useNavigate } from "react-router-dom";
 
 export default function DropZone() {
 
     const [drag, setDrag] = useState(false);
     const [file, setFile] = useState();
     const url = "";
+
+    const navigate = useNavigate();
 
     const borderStyle = {
         border: '2px dashed #696969',
@@ -21,6 +24,7 @@ export default function DropZone() {
         })
         .then(() => {console.log('Загружено'); })
         .catch(() => { console.log('Ошибка');})
+        navigate("/loader");
         setDrag(false)
     }
 

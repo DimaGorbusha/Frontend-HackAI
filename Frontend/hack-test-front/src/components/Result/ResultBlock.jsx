@@ -4,7 +4,7 @@ import search from '../../img/pages/Result/search.svg'
 import file from '../../img/pages/Result/file.svg'
 
 export default function ResultBlock() {
-  const [text, setText] = useState("туманы лимана манили меня");
+  const [text, setText] = useState("");
 
   let ya_url = 'https://yandex.ru/search/?text='
   ya_url += text
@@ -36,7 +36,8 @@ export default function ResultBlock() {
           <img src="" alt="" className='pl-[20px] max-w-[450] max-h-[209]'/>
         </div>
       </div>
-      <p className='bg-main rounded-[10px] transition delay-[100] ease-in hover:bg-black font-sussie-medium text-[16px] text-white ml-[120px] mr-[1038px] pl-[75px] py-[14px] mt-[17px] mb-[104px] cursor-pointer'>Начать сначала &gt;</p>
+      <a href="/"><p className='bg-main rounded-[10px] transition delay-[100] ease-in hover:bg-black font-sussie-medium text-[16px] text-white ml-[120px] mr-[1038px] pl-[75px] py-[14px] mt-[17px] mb-[104px] cursor-pointer'>Начать сначала &gt;</p></a>
     </div>
   )
 }
+ 

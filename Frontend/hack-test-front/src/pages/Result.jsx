@@ -6,7 +6,7 @@ import Footer from '../components/common/Footer'
 
 export default function Result() {
   return (
-    <div>
+    <div className='bg-bg'>
         <Header/>
         <ResultBlock/>
         <Footer/>
