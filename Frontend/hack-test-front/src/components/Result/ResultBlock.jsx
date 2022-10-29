@@ -23,7 +23,7 @@ export default function ResultBlock() {
           </div>
           <div className='flex bg-white rounded-[10px] ml-[17px] transition delay-[100] ease-in hover:bg-black cursor-pointer'>
               <img src={file} alt="" className='pl-[75px] mr-[10px]'/>
-              <p className='font-sussie-medium text-[16px] text-main mr-[10px] py-[14px] pr-[75px]'>Скачать файл .docx</p>
+              <p className='font-sussie-medium text-[16px] text-main mr-[10px] py-[14px] pr-[75px]'>Скачать файл .txt</p>
           </div>
       </div>
       <div className='flex mt-[17px]'>
