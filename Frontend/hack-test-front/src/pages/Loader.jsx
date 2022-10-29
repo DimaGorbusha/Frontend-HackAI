@@ -1,9 +1,13 @@
 import React from 'react'
 import Footer from '../components/common/Footer'
 import Header from '../components/common/Header'
-import waiting from '../img/pages/Loader/waiting.gif' 
+import waiting from '../img/pages/Loader/waiting.gif'
+import { useNavigate } from "react-router-dom";
 
 export default function Loader() {
+ 
+  const navigate = useNavigate();
+
   return (
     <div className='bg-bg'>
         <Header/>
