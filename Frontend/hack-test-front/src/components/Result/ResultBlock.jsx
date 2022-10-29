@@ -4,8 +4,14 @@ import search from '../../img/pages/Result/search.svg'
 import file from '../../img/pages/Result/file.svg'
 
 export default function ResultBlock() {
-  const [text, setText] = useState("");
-
+  const [text, setText] = useState("туманы лимана манили меня");
+  let host = "http://2c9a-88-87-94-10.ngrok.io/";
+  let pic_name = "00009.jpg";
+  let txt_name = "00009.txt";
+  let pic_url = `get-image/${pic_name}`;
+  let txt_url = `get-texts/${txt_name}`;
+  pic_url = host + pic_url;
+  txt_url = host + txt_url;
   let ya_url = 'https://yandex.ru/search/?text='
   ya_url += text
 
@@ -23,7 +29,7 @@ export default function ResultBlock() {
           </div>
           <div className='flex bg-white rounded-[10px] ml-[17px] transition delay-[100] ease-in hover:bg-black cursor-pointer'>
               <img src={file} alt="" className='pl-[75px] mr-[10px]'/>
-              <p className='font-sussie-medium text-[16px] text-main mr-[10px] py-[14px] pr-[75px]'>Скачать файл .txt</p>
+              <a href={txt_url}><p className='font-sussie-medium text-[16px] text-main mr-[10px] py-[14px] pr-[75px]'>Скачать файл .txt</p></a>
           </div>
       </div>
       <div className='flex mt-[17px]'>
@@ -33,7 +39,7 @@ export default function ResultBlock() {
         </div>
         <div className='flex-col bg-white min-w-[486px] min-h-[275px] ml-[24px] rounded-[8px]'>
           <h2 className='font-sussie-semibold text-[15px] text-[#332E2D] pt-[18px] pl-[20px] mb-[8px]'>Изображение</h2>
-          <img src="" alt="" className='pl-[20px] max-w-[450] max-h-[209]'/>
+          <img src={pic_url} alt="" className='pl-[20px] max-w-[450] max-h-[209]'/>
         </div>
       </div>
       <a href="/"><p className='bg-main rounded-[10px] transition delay-[100] ease-in hover:bg-black font-sussie-medium text-[16px] text-white ml-[120px] mr-[1038px] pl-[75px] py-[14px] mt-[17px] mb-[104px] cursor-pointer'>Начать сначала &gt;</p></a>
