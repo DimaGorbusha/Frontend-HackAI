@@ -5,7 +5,7 @@ import file from '../../img/pages/Result/file.svg'
 
 export default function ResultBlock() {
   const [text, setText] = useState("туманы лимана манили меня");
-  let host = "http://2c9a-88-87-94-10.ngrok.io/";
+  let host = "https://ocr.lowderplay.dev/";
   let pic_name = "00009.jpg";
   let txt_name = "00009.txt";
   let pic_url = `get-image/${pic_name}`;
